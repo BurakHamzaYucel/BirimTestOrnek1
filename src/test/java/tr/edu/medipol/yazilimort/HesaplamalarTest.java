@@ -1,0 +1,36 @@
+package tr.edu.medipol.yazilimort;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class HesaplamalarTest {
+
+	@Test
+	public void testFaktoriyelRec() {
+		int sonuc = Hesaplamalar.faktoriyelRec(5);
+		assertEquals(120, sonuc);
+	}
+
+	@Test
+	public void testFaktoriyelLoop() {
+		int sonuc1 = Hesaplamalar.faktoriyelLoop(120);
+		int sonuc2 = Hesaplamalar.faktoriyelRec(120);
+		assertEquals(sonuc1, sonuc2);
+	}
+	
+	@Test
+	public void testtopla() {
+		int sonucTopla = Hesaplamalar.topla(5, 5);
+	}
+	
+	@Test
+	public void testcikart( ) {
+		int sonucCikart = Hesaplamalar.cikart(5, 5);
+	}
+	
+	@Test
+	public void testcarpma() {
+		int sonucCarpma = Hesaplamalar.carpma(5, 5);
+	}
+}
